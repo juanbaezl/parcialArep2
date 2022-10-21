@@ -20,6 +20,27 @@ Este servicio web es una implementacion de la conjetura Collatz
 #### Video demostración
 [Video](./media/video.mp4)
 
+### Guia de uso
+
+Para correr local este proyecto, debe clonar el repositorio
+```
+git clone https://github.com/juanbaezl/parcialArep2
+```
+
+una vez clonado, debe compilar el proyecto con 
+
+```
+mvn git
+```
+
+y para correrlo debe usar el siguiente comando
+
+```
+java -cp "target/classes:target/dependency/*" co.edu.escuelaing.App
+```
+
+En caso de correrlo en windows debe cambiar el ":" a ";"
+
 ### Explicación AWS
 
 Para hacer su propio aws con esta aplicación web, primero debe lanzar una instancia EC2, luego en el grupo de seguridad de esa instancia, abrir el puerto que va a utilizar (para esta explicación se usará el puerto 5000), una vez hecho esto se debe conectar a la máquina por ssh y allí debe ejecutar los siguientes comandos:
