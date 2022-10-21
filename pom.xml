@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>co.edu.escuelaing</groupId>
-  <artifactId>backend</artifactId>
+  <artifactId>parcialarep2</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>backend</name>
+  <name>parcialarep2</name>
   <url>http://maven.apache.org</url>
   <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -20,11 +20,36 @@
       <scope>test</scope>
     </dependency>
     <!-- https://mvnrepository.com/artifact/com.sparkjava/spark-core -->
-        <dependency>
-            <groupId>com.sparkjava</groupId>
-            <artifactId>spark-core</artifactId>
-            <version>2.9.2</version>
-        </dependency>
+    <dependency>
+        <groupId>com.sparkjava</groupId>
+        <artifactId>spark-core</artifactId>
+        <version>2.9.2</version>
+    </dependency>
+     <!-- https://mvnrepository.com/artifact/org.webjars.bower/jquery -->
+    <dependency>
+      <groupId>org.webjars.bower</groupId>
+      <artifactId>jquery</artifactId>
+      <version>3.6.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>jquery</artifactId>
+      <version>3.6.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.35</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.7.35</version>
+    </dependency>
   </dependencies>
   <!-- build configuration -->
     <build>

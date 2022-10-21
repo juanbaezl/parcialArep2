@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CollatzApp</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>CollatzApp</h1>
+        <form>
+            <label for="getvalue">Number:</label><br>
+            <input type="text" id="getvalue" name="value" placeholder="ej. 13"><br><br>
+            <input type="button" value="Submit" onclick="getPostMsg(getvalue)">
+        </form>
+        
+        <div id="getrespmsg"></div>
+        
+        <script>
+            function getPostMsg(name){
+                let url = "/collatz?value=" + name.value;
+                fetch (url, {method: 'GET'})
+                    .then(x => x.text())
+                    .then(y => document.getElementById("getrespmsg").innerHTML = y);
+            }
+        </script>
+    </body>
+</html>
